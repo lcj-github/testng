@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="com.lcj.testng.dependent.DependentTestExamples"/>
+   	  <class name="com.lcj.testng.dependent.DependentTestExamples2"/>
+   	  <class name="com.lcj.testng.dependent.DependentTestExamples3"/>
+    </classes>
+  </test>
+</suite>

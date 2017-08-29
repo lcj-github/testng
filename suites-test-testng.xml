@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel tests" parallel="tests" thread-count="2" >
+  <test name="Test One">
+    <parameter name="test-name" value="Test One"/>
+    <classes>
+      <class name="com.lcj.testng.mavenBuild.ParallelSuiteTest" />
+    </classes>
+  </test>
+  <test name="Test Two">
+    <parameter name="test-name" value="Test Two"/>
+    <classes>
+      <class name="com.lcj.testng.mavenBuild.ParallelSuiteTest" />
+    </classes>
+  </test>
+</suite>
