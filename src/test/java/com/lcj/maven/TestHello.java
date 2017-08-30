@@ -18,5 +18,11 @@ public class TestHello {
 		Hello h = new Hello();         
         assertEquals(h.sayHello("jizgtest"),"hello :jizgtest");
     }
+	
+	@Test
+    public void testHello3(){ 
+		Hello h = new Hello();         
+        assertEquals(h.sayHello("jizgtest3"),"hello :jizgtest3");
+    }
 
 }
