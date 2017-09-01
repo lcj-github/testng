@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Independent test Suite" >
+  <test name="Independent test">
+    <classes>
+     <class name="com.lcj.testng.IndependentTest" />
+    </classes>
+  </test>
+</suite>

@@ -13,7 +13,6 @@
 	</properties>
 	
 	<dependencies>
-	 
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -25,9 +24,6 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-		
-		
-		
 	</dependencies>
 
 	<build>
@@ -48,6 +44,7 @@
 	                   <suiteXmlFiles>
 	                       <suiteXmlFile>testng.xml</suiteXmlFile>
 	                       <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>
+	                       <suiteXmlFile>independent-test-testng.xml</suiteXmlFile>
 	                   </suiteXmlFiles>					
 				</configuration>							
 			</plugin>			
