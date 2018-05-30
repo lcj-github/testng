@@ -82,6 +82,7 @@
 	                       <suiteXmlFile>testng.xml</suiteXmlFile>
 	                       <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>
 	                       <suiteXmlFile>independent-test-testng.xml</suiteXmlFile>
+	                       <suiteXmlFile>testng-suites.xml</suiteXmlFile>
 	                   </suiteXmlFiles>					
 				</configuration>							
 			</plugin>			
