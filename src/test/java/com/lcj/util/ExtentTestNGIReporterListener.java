@@ -113,7 +113,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         // htmlReporter.config().setTheme(Theme.STANDARD);
         htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setEncoding("utf-8");
+        htmlReporter.config().setEncoding("GBK");
         htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
