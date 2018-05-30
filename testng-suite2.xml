@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite2只有一个test" verbose="1" preserve-order="true" parallel="false">
+    <test name="失败用例">
+        <classes>
+            <class name="com.lcj.testng.ReportTest">
+                <methods>
+                    <include name="testFail"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.lcj.util.ExtentTestNGIReporterListener"></listener>
+       
+    </listeners>
+</suite>

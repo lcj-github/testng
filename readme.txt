@@ -9,3 +9,5 @@
       	 http://www.cnblogs.com/zhouyalei/p/6474394.html
       	 http://blog.sina.com.cn/s/blog_90aad2c90101lce4.html
     3：IndependentTest 进行配置 log记录
+    4: testng  学习参考 https://howtodoinjava.com/testng
+    5：ExtentReports 结合 TestNg 生成自动化 html 报告

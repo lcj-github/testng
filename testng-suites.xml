@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="多个suite测试" verbose="1" preserve-order="true" parallel="false">
+    <suite-files>
+        <suite-file path="testng-suite1.xml"></suite-file>
+        <suite-file path="testng-suite2.xml"></suite-file>
+    </suite-files>
+    <listeners>
+        <listener class-name="com.lcj.util.ExtentTestNGIReporterListener"></listener>       
+    </listeners>
+</suite>
