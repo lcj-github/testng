@@ -1,17 +1,31 @@
 package com.lcj.util;
 
+import java.io.File;
+import java.util.Calendar;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+
+import org.testng.IReporter;
+import org.testng.IResultMap;
+import org.testng.ISuite;
+import org.testng.ISuiteResult;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.xml.XmlSuite;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.ResourceCDN;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.model.TestAttribute;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import org.testng.*;
-import org.testng.xml.XmlSuite;
-
-import java.io.File;
-import java.util.*;
 
 public class ExtentTestNGIReporterListener implements IReporter {
 	
@@ -111,11 +125,12 @@ public class ExtentTestNGIReporterListener implements IReporter {
         htmlReporter.config().setReportName("api自动化测试报告");
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-        // htmlReporter.config().setTheme(Theme.STANDARD);
+         
         htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setEncoding("GBK");
+        htmlReporter.config().setEncoding("utf-8");
+        htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
         
-        htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}");
+        //htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setReportUsesManualConfiguration(true);
