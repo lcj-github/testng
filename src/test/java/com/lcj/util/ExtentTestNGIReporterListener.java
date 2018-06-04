@@ -124,13 +124,14 @@ public class ExtentTestNGIReporterListener implements IReporter {
         htmlReporter.config().setDocumentTitle("api自动化测试报告");
         htmlReporter.config().setReportName("api自动化测试报告");
         htmlReporter.config().setChartVisibilityOnOpen(true);
-        htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-         
+        htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);         
         htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setEncoding("uft-8");
+        //htmlReporter.config().setEncoding("uft-8");
+        htmlReporter.config().setCSS(
+                ".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}  .card-panel.environment  th:first-child{ width:30%;}");
+        // 移除按键监听事件
+        htmlReporter.config().setJS("$(window).off(\"keydown\");");
         htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
-        
-        htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setReportUsesManualConfiguration(true);
