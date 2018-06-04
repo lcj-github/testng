@@ -33,8 +33,8 @@ public class ReportTest {
         Assert.assertTrue(true,"成功咯!");
     }
 
-    @Test
+    /*@Test
     public void testFail() {
         Assert.fail("失败咯!");
-    }
+    }*/
 }
