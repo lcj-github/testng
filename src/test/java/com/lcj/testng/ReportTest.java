@@ -28,7 +28,7 @@ public class ReportTest {
         Assert.assertTrue(s.length()>2," 成功？失败？");
     }
 
-    @Test
+   /* @Test
     public void testTrue() {
         Assert.assertTrue(true,"成功咯!");
     }
@@ -36,5 +36,5 @@ public class ReportTest {
     @Test
     public void testFail() {
         Assert.fail("失败咯!");
-    }
+    }*/
 }
