@@ -13,3 +13,4 @@
     5：ExtentReports 结合 TestNg 生成自动化 html 报告
     6： MyListenerTest 类名前 添加 ：@Listeners标签，会在执行@Test标签方法前会执行：MyMethodInterceptor中 的方法
     7： interUsing中用到的请求方法及解析excle方法，拼接参数方法。但ContactngTest 方法与testng集成及util些方法。
+    8：httpAvatar包中，参考https://github.com/OnTheWay111/Avatar
