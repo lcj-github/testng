@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite下有多test" verbose="1" preserve-order="true" parallel="false">
+    <test name="内部接口test">
+        <classes>
+            <class name="com.lcj.testng.interUsing.OpenAcctJzTest">
+                <methods>
+                    <include name="testMobileUserName"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+ 
+    <listeners>
+        <listener class-name="com.lcj.util.ExtentTestNGIReporterListener"></listener>        
+    </listeners>
+</suite>

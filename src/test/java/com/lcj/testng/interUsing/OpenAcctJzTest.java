@@ -12,6 +12,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -76,6 +77,8 @@ public class OpenAcctJzTest {
 		
 		String respBody = postJson(reqJson);
 		System.out.println("respBody==="+respBody);
+		
+		Assert.assertEquals(respBody,"respBody","Not equals: ");
 			
 	}
 	
