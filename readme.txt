@@ -12,5 +12,7 @@
     4: testng  学习参考 https://howtodoinjava.com/testng
     5：ExtentReports 结合 TestNg 生成自动化 html 报告
     6： MyListenerTest 类名前 添加 ：@Listeners标签，会在执行@Test标签方法前会执行：MyMethodInterceptor中 的方法
-    7： interUsing中用到的请求方法及解析excle方法，拼接参数方法。但ContactngTest 方法与testng集成及util些方法。
-    8：httpAvatar包中，参考https://github.com/OnTheWay111/Avatar
+    ================================对接口测试，结合7 8 9优化请求代码，testng-inter.xml进行生成报告================================================================
+    7： interUsing中用到的请求方法，拼接参数方法，解析excel 但ContactngTest 方法与testng集成及util些方法。
+    8：httpAvatar包中，参考https://github.com/OnTheWay111/Avatar 比较标准格式的get post方法
+    9:apiAutotest包中，参考https://github.com/ChenSen5/api_autotest 封装了：get post put delete方法及 支持ssl方法。
