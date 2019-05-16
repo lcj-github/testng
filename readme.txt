@@ -16,3 +16,4 @@
     7： interUsing中用到的请求方法，拼接参数方法，解析excel 但ContactngTest 方法与testng集成及util些方法。
     8：httpAvatar包中，参考https://github.com/OnTheWay111/Avatar 比较标准格式的get post方法
     9:apiAutotest包中，参考https://github.com/ChenSen5/api_autotest 封装了：get post put delete方法及 支持ssl方法。
+    10:failGoOn做到断言失败不中断执行,参考 https://blog.csdn.net/hujyhfwfh2/article/details/85057366
