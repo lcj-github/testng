@@ -99,9 +99,10 @@
 				<version>2.19.1</version>				 				 				
 				<configuration>				
 	                   <suiteXmlFiles>	                   
-	                   	   <suiteXmlFile>testng-inter.xml</suiteXmlFile>
-	                   	   <!--  
-	                       <suiteXmlFile>testng.xml</suiteXmlFile>
+	                   	   <suiteXmlFile>testng.xml</suiteXmlFile>
+	                   	   <!--
+	                   	   <suiteXmlFile>testng-inter.xml</suiteXmlFile>  
+	                       
 	                       <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>
 	                       <suiteXmlFile>independent-test-testng.xml</suiteXmlFile>
 	                       <suiteXmlFile>testng-suites.xml</suiteXmlFile>-->
